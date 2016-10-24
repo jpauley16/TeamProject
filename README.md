@@ -1,2 +1,3 @@
 # TeamProject
-Web Service Project with Craig Wilson
+Web Service Project 
+Jeff Pauley and Craig Wilson
