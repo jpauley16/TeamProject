@@ -58,17 +58,17 @@ public class CodeToStringJSON {
 
         for (PoliceScannerCode policeScannerCode : policeScannerCodeList)
         {
-            jsonObjectMedFire.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
+            jsonObjectPoliceScanner.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
         }
 
         for (Scanner11 scanner11 : scanner11List)
         {
-            jsonObjectMedFire.put(scanner11.getCopCode(), scanner11.getCodeString());
+            jsonObjectScanner11.put(scanner11.getCopCode(), scanner11.getCodeString());
         }
 
         for (Scanner137 scanner137 : scanner137List)
         {
-            jsonObjectMedFire.put(scanner137.getCopCode(), scanner137.getCodeString());
+            jsonObjectScanner137.put(scanner137.getCopCode(), scanner137.getCodeString());
         }
 
 

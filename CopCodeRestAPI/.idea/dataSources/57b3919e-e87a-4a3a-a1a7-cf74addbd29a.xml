@@ -4,14 +4,14 @@
     <schema id="1" name="copCodes">
       <visible>1</visible>
     </schema>
-    <schema id="2" name="draftingtool"/>
-    <schema id="3" name="information_schema"/>
-    <schema id="4" name="mysql"/>
-    <schema id="5" name="performance_schema"/>
-    <schema id="6" name="sample"/>
-    <schema id="7" name="sys"/>
-    <schema id="8" name="ToDo"/>
-    <schema id="9" name="week5security"/>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="mysql"/>
+    <schema id="4" name="performance_schema"/>
+    <schema id="5" name="sample"/>
+    <schema id="6" name="sys"/>
+    <schema id="7" name="mtgstorage"/>
+    <schema id="8" name="new"/>
+    <schema id="9" name="Test"/>
     <table id="10" parent="1" name="copCodes"/>
     <table id="11" parent="1" name="policeScannerCodes"/>
     <table id="12" parent="1" name="scanner137"/>
