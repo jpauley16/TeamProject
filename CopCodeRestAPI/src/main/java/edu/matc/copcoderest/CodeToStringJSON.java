@@ -74,27 +74,27 @@ public class CodeToStringJSON {
 
         if (jsonObjectCopCode.has(policeCode))
         {
-            result = "Cop Codes JSON to String:\n\n" + "{\"" + policeCode + "\", \"" + jsonObjectCopCode.get(policeCode) + "\"}";
+            result = "{\"" + policeCode + "\", \"" + jsonObjectCopCode.get(policeCode) + "\"}";
         }
 
         if (jsonObjectMedFire.has(policeCode))
         {
-            result = "Medical/Fire Codes JSON to String:\n\n" + "{\"" + policeCode + "\", \"" + jsonObjectMedFire.get(policeCode) + "\"}";
+            result = "{\"" + policeCode + "\", \"" + jsonObjectMedFire.get(policeCode) + "\"}";
         }
 
         if (jsonObjectPoliceScanner.has(policeCode))
         {
-            result = "PoliceScanner Codes JSON to String:\n\n" + "{\"" + policeCode + "\", \"" + jsonObjectPoliceScanner.get(policeCode) + "\"}";
+            result = "{\"" + policeCode + "\", \"" + jsonObjectPoliceScanner.get(policeCode) + "\"}";
         }
 
         if (jsonObjectScanner11.has(policeCode))
         {
-            result = "Scanner11 Codes JSON to String:\n\n" + "{\"" + policeCode + "\", \"" + jsonObjectScanner11.get(policeCode) + "\"}";
+            result = "{\"" + policeCode + "\", \"" + jsonObjectScanner11.get(policeCode) + "\"}";
         }
 
         if (jsonObjectScanner137.has(policeCode))
         {
-            result = "Scanner137 Codes JSON to String:\n\n" + "{\"" + policeCode + "\", \"" + jsonObjectScanner137.get(policeCode) + "\"}";
+            result = "{\"" + policeCode + "\", \"" + jsonObjectScanner137.get(policeCode) + "\"}";
         }
 
         return Response.status(200).entity(result).build();
@@ -107,11 +107,7 @@ public class CodeToStringJSON {
     {
         String result = null;
 
-        JSONObject jsonObjectCopCode = new JSONObject();
-        JSONObject jsonObjectMedFire = new JSONObject();
-        JSONObject jsonObjectPoliceScanner = new JSONObject();
-        JSONObject jsonObjectScanner11 = new JSONObject();
-        JSONObject jsonObjectScanner137 = new JSONObject();
+        JSONObject jsonObjectAll = new JSONObject();
 
         CopCodeDao copCodeDao = new CopCodeDao();
         MedFireCodesDao medFireCodesDao = new MedFireCodesDao();
@@ -127,31 +123,30 @@ public class CodeToStringJSON {
 
         for (CopCode copCode : copCodesList)
         {
-            jsonObjectCopCode.put(copCode.getCopCode(), copCode.getCodeString());
+            jsonObjectAll.put(copCode.getCopCode(), copCode.getCodeString());
         }
 
         for (MedFireCodes medFireCodes : medFireCodesList)
         {
-            jsonObjectMedFire.put(medFireCodes.getCopCode(), medFireCodes.getCodeString());
+            jsonObjectAll.put(medFireCodes.getCopCode(), medFireCodes.getCodeString());
         }
 
         for (PoliceScannerCode policeScannerCode : policeScannerCodeList)
         {
-            jsonObjectPoliceScanner.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
+            jsonObjectAll.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
         }
 
         for (Scanner11 scanner11 : scanner11List)
         {
-            jsonObjectScanner11.put(scanner11.getCopCode(), scanner11.getCodeString());
+            jsonObjectAll.put(scanner11.getCopCode(), scanner11.getCodeString());
         }
 
         for (Scanner137 scanner137 : scanner137List)
         {
-            jsonObjectScanner137.put(scanner137.getCopCode(), scanner137.getCodeString());
+            jsonObjectAll.put(scanner137.getCopCode(), scanner137.getCodeString());
         }
 
-        result = "All Codes JSON to String:\n\n" + jsonObjectScanner137 + "\n\n" + jsonObjectScanner11 + "\n\n"
-                    + jsonObjectPoliceScanner + "\n\n" + jsonObjectMedFire + "\n\n" + jsonObjectCopCode;
+        result = jsonObjectAll.toString();
 
         return Response.status(200).entity(result).build();
     }
