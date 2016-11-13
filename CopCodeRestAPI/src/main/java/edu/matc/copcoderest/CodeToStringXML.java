@@ -27,7 +27,7 @@ public class CodeToStringXML {
     public Response convertCodeToString(@PathParam("param") String code) {
 
         String policeCode = code;
-        String codeMeaning;
+        String results = "";
 
         Map<String, String> copCodesMap = new HashMap<String, String>();
 
@@ -66,8 +66,15 @@ public class CodeToStringXML {
         }
 
 
-        String results = "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + copCodesMap.get(policeCode) + "</codeMeaning></ctosservice>";
+        for (Map.Entry<String, String> entry : copCodesMap.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
 
+            if (key.equals(policeCode)) {
+                results += "<ctosservice><code>" + key + "</code><codeMeaning>" + value + "</codeMeaning></ctosservice>";
+
+            }
+        }
 
 
         return Response.status(200).entity(results).build();
@@ -77,7 +84,7 @@ public class CodeToStringXML {
     @Produces(MediaType.TEXT_XML)
     public Response convertCodeToStringAll() {
 
-        String results = null;
+        String results = "";
 
         Map<String, String> copCodesMap = new HashMap<String, String>();
 
