@@ -1,3 +1,8 @@
 Test set: edu.matc.copcoderest.persistence.GenericDaoTest
+<<<<<<< HEAD
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.191 sec
 Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.12 sec
+=======
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.586 sec
+>>>>>>> 74898dc4004d8ebd041fb951aea9d1563b420154
