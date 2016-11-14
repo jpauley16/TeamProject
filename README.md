@@ -7,7 +7,7 @@ Jeff Pauley and Craig Wilson
 
 
 ## Project Plan
-
+[Time Log](TimeLog.md)
 
 ## API Documentation
 [CopCodeAPI](CopCodeAPI.md)
