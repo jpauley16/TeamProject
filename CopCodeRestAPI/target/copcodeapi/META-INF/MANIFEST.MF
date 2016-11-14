@@ -1,5 +1,6 @@
 Manifest-Version: 1.0
-Built-By: craigwilson
-Created-By: IntelliJ IDEA
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: netherskub
 Build-Jdk: 1.8.0_101
 
