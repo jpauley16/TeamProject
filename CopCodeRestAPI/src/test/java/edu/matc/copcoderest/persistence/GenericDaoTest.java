@@ -1,3 +1,4 @@
+/**
 package edu.matc.copcoderest.persistence;
 
 import edu.matc.copcoderest.entity.*;
@@ -14,6 +15,7 @@ import static org.junit.Assert.*;
 /**
  * Created by craigwilson on 11/8/16.
 */
+/**
 public class GenericDaoTest {
 
     private Logger log = Logger.getLogger(this.getClass());
@@ -77,3 +79,4 @@ public class GenericDaoTest {
         assertEquals(11, scanner137CodeList.size());
     }
 }
+*/
