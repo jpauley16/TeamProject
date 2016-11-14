@@ -84,7 +84,7 @@ public class CodeToStringXML {
     @Produces(MediaType.TEXT_XML)
     public Response convertCodeToStringAll() {
 
-        String results = "";
+        String results = "<ctosservice>";
 
         Map<String, String> copCodesMap = new HashMap<String, String>();
 
@@ -126,8 +126,10 @@ public class CodeToStringXML {
         for (Map.Entry<String, String> entry : copCodesMap.entrySet()) {
             String key = entry.getKey();
             String value = entry.getValue();
-            results += "<ctosservice><code>" + key + "</code><codeMeaning>" + value + "</codeMeaning></ctosservice>";
+            results += "<code>" + key + "</code><codeMeaning>" + value + "</codeMeaning>";
         }
+
+        results += "</ctosservice>";
 
 
         return Response.status(200).entity(results).build();

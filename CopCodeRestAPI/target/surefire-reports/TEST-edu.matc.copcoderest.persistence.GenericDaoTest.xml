@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite tests="5" failures="0" name="edu.matc.copcoderest.persistence.GenericDaoTest" time="2.19" errors="0" skipped="0">
+=======
+<<<<<<< HEAD
+<testsuite tests="5" failures="0" name="edu.matc.copcoderest.persistence.GenericDaoTest" time="1.774" errors="0" skipped="0">
+=======
+<<<<<<< HEAD
+<testsuite tests="5" failures="0" name="edu.matc.copcoderest.persistence.GenericDaoTest" time="2.19" errors="0" skipped="0">
+=======
+<testsuite tests="5" failures="0" name="edu.matc.copcoderest.persistence.GenericDaoTest" time="3.586" errors="0" skipped="0">
+>>>>>>> 74898dc4004d8ebd041fb951aea9d1563b420154
+>>>>>>> 0ace15324e7422d10fd5210316d92219add9b8bf
+>>>>>>> d5af68afabba38d6c008bf72980bd573392b5165
   <properties>
     <property name="idea.version" value="2016.2.5"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -62,9 +74,33 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
+<<<<<<< HEAD
   <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner11Codes" time="1.89"/>
   <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllMedFireCodes" time="0.005"/>
   <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllCopCodes" time="0.03"/>
   <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllPoliceScannerCodes" time="0.019"/>
   <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner137Codes" time="0.013"/>
+=======
+<<<<<<< HEAD
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner11Codes" time="1.525"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllMedFireCodes" time="0.005"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllCopCodes" time="0.019"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllPoliceScannerCodes" time="0.015"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner137Codes" time="0.006"/>
+=======
+<<<<<<< HEAD
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner11Codes" time="1.918"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllMedFireCodes" time="0.007"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllCopCodes" time="0.03"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllPoliceScannerCodes" time="0.021"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner137Codes" time="0.012"/>
+=======
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner11Codes" time="3.086"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllMedFireCodes" time="0.017"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllCopCodes" time="0.043"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllPoliceScannerCodes" time="0.03"/>
+  <testcase classname="edu.matc.copcoderest.persistence.GenericDaoTest" name="getAllScanner137Codes" time="0.018"/>
+>>>>>>> 74898dc4004d8ebd041fb951aea9d1563b420154
+>>>>>>> 0ace15324e7422d10fd5210316d92219add9b8bf
+>>>>>>> d5af68afabba38d6c008bf72980bd573392b5165
 </testsuite>
