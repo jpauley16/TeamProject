@@ -7,8 +7,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import edu.matc.copcoderest.persistence.CopCodeDao;
+import edu.matc.copcoderest.entity.MedFireCodes;
+import edu.matc.copcoderest.persistence.*;
 import edu.matc.copcoderest.entity.CopCode;
+import edu.matc.copcoderest.entity.PoliceScannerCode;
+import edu.matc.copcoderest.entity.Scanner11;
+import edu.matc.copcoderest.entity.Scanner137;
 
 import java.util.*;
 
@@ -27,69 +31,43 @@ public class CodeToStringXML {
 
         Map<String, String> copCodesMap = new HashMap<String, String>();
         CopCodeDao copCodeDao = new CopCodeDao();
+        MedFireCodesDao medFireCodesDao = new MedFireCodesDao();
+        PoliceScannerCodeDao policeScannerCodeDao = new PoliceScannerCodeDao();
+        Scanner11Dao scanner11Dao = new Scanner11Dao();
+        Scanner137Dao scanner137Dao = new Scanner137Dao();
+
 
         List<CopCode> copCodesList = copCodeDao.getAll();
+        List<MedFireCodes> medFireCodesList = medFireCodesDao.getAll();
+        List<PoliceScannerCode> policeScannerCodeList = policeScannerCodeDao.getAll();
+        List<Scanner11> scanner11List = scanner11Dao.getAll();
+        List<Scanner137> scanner137List = scanner137Dao.getAll();
+
 
         for (CopCode copCode : copCodesList) {
             copCodesMap.put(copCode.getCopCode(), copCode.getCodeString());
         }
 
+        for (MedFireCodes medFireCodes : medFireCodesList) {
+            copCodesMap.put(medFireCodes.getCopCode(), medFireCodes.getCodeString());
+        }
+
+        for (PoliceScannerCode policeScannerCode : policeScannerCodeList) {
+            copCodesMap.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
+        }
+
+        for (Scanner11 scanner11Code : scanner11List) {
+            copCodesMap.put(scanner11Code.getCopCode(), scanner11Code.getCodeString());
+        }
+
+        for (Scanner137 scanner137Code : scanner137List) {
+            copCodesMap.put(scanner137Code.getCopCode(), scanner137Code.getCodeString());
+        }
+
 
         String results = "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + copCodesMap.get(policeCode) + "</codeMeaning></ctosservice>";
 
-        /**
 
-        if (policeCode.equals("10-0")) {
-            codeMeaning = "Caution";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-1")) {
-            codeMeaning = "Reception poor";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-2")) {
-            codeMeaning = "Reception good";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-3")) {
-            codeMeaning = "Stop transmitting";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-4")) {
-            codeMeaning = "Message received, understood";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-5")) {
-            codeMeaning = "Relay message";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-6")) {
-            codeMeaning = "Change channel";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-7")) {
-            codeMeaning = "Out of service";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-7A")) {
-            codeMeaning = "Out of service, home";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-        if (policeCode.equals("10-7B")) {
-            codeMeaning = "Out of service, personal";
-            results =  "<ctosservice><code>" + policeCode + "</code><codeMeaning>" + codeMeaning + "</codeMeaning></ctosservice>";
-        }
-
-         */
 
         return Response.status(200).entity(results).build();
     }
