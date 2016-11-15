@@ -10,3 +10,5 @@
 | Jeff Pauley | 11/12/2016 | Deploy Successful | 2.5hr | Project communicates with database in server. Everything works. |
 | Jeff Pauley | 11/13/2016 | Getting Craig's TeamProject deployed to Server | 1.5hr | My computer crashes if hooked up to HDMI. To Present project, Craigs team project will be used instead. |
 | Jeff Pauley | 11/14/2016 | Added 5 more java classes for JSON Responses | 1hr | Previously, To view all codes, "/ctosservice/xml/". To view a specific code, "/ctosservice/xml/{param}". Current, view all stays the same. To view a specific, "/ctosservice/xml/copcode/{param}" or "/ctosservice/xml/medfirecode/{param}", etc... will show codes specific to that class. |
+| Jeff Pauley | 11/14/2016 | Reformatting JSON responses | 2hr | (During php) Having trouble formatting to pretty print JSON |
+| Jeff Pauley | 11/15/2016 | Reformatting JSON responses | 5hr | Computer issues made coding longer. JSON responses completed for single line responses. Complete list leaves a trailed comma at the end of JSON list. |
