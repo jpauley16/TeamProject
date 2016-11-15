@@ -16,15 +16,39 @@ import java.util.List;
 /**
  * Created by netherskub on 11/14/16.
  */
-@Path("/ctosservice/json/scanner11")
+@Path("/ctosservice/json/scanner11code")
 public class CodeToStringJSONScanner11 {
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response convertCopCodeJsonToStringFromInput()throws JSONException
+    {
+        String result = "{\"Results\":[";
+        JSONObject jsonObjectAll = new JSONObject();
+
+        Scanner11Dao scanner11Dao = new Scanner11Dao();
+
+        List<Scanner11> scanner11List = scanner11Dao.getAll();
+
+
+        for (Scanner11 scanner11 : scanner11List)
+        {
+            jsonObjectAll.put("Code: " + scanner11.getCopCode(), "Code Meaning: " + scanner11.getCodeString());
+        }
+
+        int spacesToIndentEachLevel = 4;
+        result += jsonObjectAll.toString(spacesToIndentEachLevel) + "]}";
+
+        return Response.status(200).entity(result).build();
+    }
 
     @Path("{param}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response convertCopCodeJsonToStringFromInput(@PathParam("param") String code) throws JSONException {
+
         String policeCode = code;
-        String result = null;
+        String result = "{\"Results\":[";
 
         JSONObject jsonObjectScanner11 = new JSONObject();
 
@@ -37,8 +61,10 @@ public class CodeToStringJSONScanner11 {
         }
 
         if (jsonObjectScanner11.has(policeCode)) {
-            result = "{\"" + policeCode + "\", \"" + jsonObjectScanner11.get(policeCode) + "\"}";
+            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectScanner11.get(policeCode) + "\"";
         }
+
+        result += "\n\t}]\n}";
 
         return Response.status(200).entity(result).build();
     }

@@ -16,15 +16,43 @@ import java.util.List;
 /**
  * Created by netherskub on 11/14/16.
  */
-@Path("/ctosservice/json/scanner137")
+@Path("/ctosservice/json/scanner137code")
 public class CodeToStringJSONScanner137 {
+
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response convertCopCodeJsonToStringFromInput()
+            throws JSONException
+    {
+        String result = "{\"Results\":[";
+        JSONObject jsonObjectAll = new JSONObject();
+
+        Scanner137Dao scanner137Dao = new Scanner137Dao();
+
+        List<Scanner137> scanner137List = scanner137Dao.getAll();
+
+        for (Scanner137 scanner137 : scanner137List)
+        {
+            jsonObjectAll.put("Code", scanner137.getCopCode());
+            jsonObjectAll.put("Code Meaning", scanner137.getCodeString());
+
+        }
+
+        int spacesToIndentEachLevel = 4;
+        result += jsonObjectAll.toString(spacesToIndentEachLevel) + "]}";
+
+        return Response.status(200).entity(result).build();
+    }
 
     @Path("{param}")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response convertCopCodeJsonToStringFromInput(@PathParam("param") String code) throws JSONException {
+    public Response convertCopCodeJsonToStringFromInput(@PathParam("param") String code)
+            throws JSONException
+    {
+
         String policeCode = code;
-        String result = null;
+        String result = "{\"Results\":[";
 
         JSONObject jsonObjectScanner137 = new JSONObject();
 
@@ -34,11 +62,15 @@ public class CodeToStringJSONScanner137 {
 
         for (Scanner137 scanner137 : scanner137List) {
             jsonObjectScanner137.put(scanner137.getCopCode(), scanner137.getCodeString());
+
         }
 
         if (jsonObjectScanner137.has(policeCode)) {
-            result = "{\"" + policeCode + "\", \"" + jsonObjectScanner137.get(policeCode) + "\"}";
+            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \""
+                    + jsonObjectScanner137.get(policeCode) + "\"";
         }
+
+        result += "\n\t}]\n}";
 
         return Response.status(200).entity(result).build();
     }

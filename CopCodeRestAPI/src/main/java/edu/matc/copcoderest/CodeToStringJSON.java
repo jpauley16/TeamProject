@@ -24,7 +24,7 @@ public class CodeToStringJSON {
     @Produces(MediaType.APPLICATION_JSON)
     public Response convertCopCodeJsonToStringFromInput()throws JSONException
     {
-        String result = null;
+        String result = "{\"Results\":[";
 
         JSONObject jsonObjectAll = new JSONObject();
 
@@ -65,7 +65,10 @@ public class CodeToStringJSON {
             jsonObjectAll.put(scanner137.getCopCode(), scanner137.getCodeString());
         }
 
-        result = jsonObjectAll.toString();
+        int spacesToIndentEachLevel = 2;
+        result += jsonObjectAll.toString(spacesToIndentEachLevel);
+
+
 
         return Response.status(200).entity(result).build();
     }
