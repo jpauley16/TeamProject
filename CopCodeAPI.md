@@ -1,4 +1,4 @@
-##Step 1
+##Step 1: Make a request
 
 To make a request use the base url with one of the endpoint paths appended.  
 
@@ -34,6 +34,10 @@ To make a request use the base url with one of the endpoint paths appended.
 | /xml/scanner137code/ | Returns all scanner137 codes|
 | /xml/scanner137code/{param} | Returns scanner137 code specified by param (i.e. 1-37-2) |
 
+
+##Step 2: Get a Response
+
+Responses are returned either JSON or XML, based on endpoint.
 
 
 
