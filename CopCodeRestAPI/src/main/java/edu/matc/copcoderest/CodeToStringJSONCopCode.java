@@ -49,7 +49,11 @@ public class CodeToStringJSONCopCode {
             jsonObjectAll.put("Code", key);
             jsonObjectAll.put("Code Meaning", value);
             result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
-                    + jsonObjectAll.getString("Code Meaning") + "\", ";
+                    + jsonObjectAll.getString("Code Meaning") + "\",";
+        }
+
+        if (result.endsWith(",")) {
+            result = result.substring(0, result.length() - 1);
         }
 
         result += "\n\t}]\n}";
