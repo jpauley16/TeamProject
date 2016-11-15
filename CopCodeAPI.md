@@ -40,6 +40,7 @@ To make a request use the base url with one of the endpoint paths appended.
 Responses are returned either JSON or XML, based on endpoint.
 
 ## Single code (JSON)
+##### @GET /json/copcode/10-10
 `{"Results":[{`  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-10",`    
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Off Duty"`    
@@ -47,6 +48,7 @@ Responses are returned either JSON or XML, based on endpoint.
 `}`  
 
 ## Collection of codes (JSON)
+##### @GET /json/medfirecode/
 `{"Results":[{`  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-62A",`     
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Take a report from a citizen",`    
