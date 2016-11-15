@@ -39,14 +39,14 @@ To make a request use the base url with one of the endpoint paths appended.
 
 Responses are returned either JSON or XML, based on endpoint.
 
-## Single line
+## Single code (JSON)
 `{"Results":[{`  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-10",`    
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Off Duty"`    
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}]`     
 `}`  
 
-## Multi line
+## Collection of codes (JSON)
 `{"Results":[{`  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-62A",`     
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Take a report from a citizen",`    
@@ -56,7 +56,7 @@ Responses are returned either JSON or XML, based on endpoint.
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Shooting",`   
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-30",`   
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Doesn't conform to regulators",`   
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`....`
+  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`....`
 
 
 
