@@ -2,7 +2,7 @@
 
 | Name | Date | Task | Hours | Notes|
 |------|------|------|-------|------|
-| Jeff Pauley | 11/06/2016 | Created Project Repository | .5hr | Mavem-Webapp created. Dependices added.  |
+| Jeff Pauley | 11/06/2016 | Created Project Repository | .5hr | Maven-Webapp created. Dependices added.  |
 | Jeff Pauley | 11/09/2016 | Created Class for JSON Reponse | 1.5hr | Returns all codes and specific based on param input |
 | Jeff Pauley | 11/09/2016 | Created more tests | 1hr | Basic tests |
 | Jeff Pauley | 11/11/2016 | Correcting CodeToStringJSON file | .5  | Correcting my java class. Using wrong JavaObject |
