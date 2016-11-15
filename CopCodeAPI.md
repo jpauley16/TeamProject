@@ -48,7 +48,7 @@ Responses are returned either JSON or XML, based on endpoint.
 `}`  
 
 ## Collection of codes (JSON)
-##### @GET /json/medfirecode/
+##### @GET /json/copcode/
 `{"Results":[{`  
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-62A",`     
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Take a report from a citizen",`    
