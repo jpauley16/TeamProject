@@ -1,7 +1,7 @@
 ##Step 1
 
 To make a request use the base url with one of the endpoint paths appended.
-138.68.57.56:8080/copcodeapi/ctosservice/
+|138.68.57.56:8080/copcodeapi/ctosservice/|
 
 |Endpoint|Description|
 |--------|-----------|
