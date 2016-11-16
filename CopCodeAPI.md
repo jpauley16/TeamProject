@@ -41,24 +41,30 @@ Responses are returned either JSON or XML, based on endpoint.
 
 ## Single code (JSON)
 ##### @GET /json/scanner10code/10-10
-`{"Results":[{`  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-10",`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Off Duty"`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`}]`     
-`}`  
+```json
+{"Results":[{  
+	"Code": "10-10",    
+	"Code Meaning": "Off Duty"    
+	}]     
+}
+```
 
 ## Collection of codes (JSON)
 ##### @GET /json/scanner10code/
-`{"Results":[{`  
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-62A",`     
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Take a report from a citizen",`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-72",`   
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Gun involved",`   
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-71",`   
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Shooting",`   
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code": "10-30",`   
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`"Code Meaning": "Doesn't conform to regulators",`   
-  	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`....`
+```json
+{"Results":[{
+	"Code": "10-62A",
+	"Code Meaning": "Take a report from a citizen",
+	"Code": "10-72",
+	"Code Meaning": "Gun involved",
+	"Code": "10-71",
+	"Code Meaning": "Shooting",  
+	"Code": "10-30",
+	"Code Meaning": "Doesn't conform to regulators",  
+  	....
+	}]
+}
+```
 	
 ## Single code (XML)
 ##### @GET /xml/scanner10code/10-10
