@@ -24,7 +24,7 @@ public class CodeToStringJSONMedFireCode {
     @Produces(MediaType.APPLICATION_JSON)
     public Response convertCopCodeJsonToStringFromInput()throws JSONException
     {
-        String result = "{\"Results\":[";
+        String result = "{\"Results\":[{";
         JSONObject jsonObjectAll = new JSONObject();
 
         MedFireCodesDao medFireCodesDao = new MedFireCodesDao();
@@ -34,11 +34,17 @@ public class CodeToStringJSONMedFireCode {
 
         for (MedFireCodes medFireCodes : medFireCodesList)
         {
-            jsonObjectAll.put("Code: " + medFireCodes.getCopCode(), "Code Meaning: " + medFireCodes.getCodeString());
+            jsonObjectAll.put("Code", medFireCodes.getCopCode());
+            jsonObjectAll.put("Code Meaning", medFireCodes.getCodeString());
+            result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
+                    + jsonObjectAll.getString("Code Meaning") + "\",";
         }
 
-        int spacesToIndentEachLevel = 4;
-        result += jsonObjectAll.toString(spacesToIndentEachLevel) + "]}";
+        if (result.endsWith(",")) {
+            result = result.substring(0, result.length() - 1);
+        }
+
+        result += "\n\t}]\n}";
 
         return Response.status(200).entity(result).build();
     }

@@ -23,7 +23,7 @@ public class CodeToStringJSONScanner11 {
     @Produces(MediaType.APPLICATION_JSON)
     public Response convertCopCodeJsonToStringFromInput()throws JSONException
     {
-        String result = "{\"Results\":[";
+        String result = "{\"Results\":[{";
         JSONObject jsonObjectAll = new JSONObject();
 
         Scanner11Dao scanner11Dao = new Scanner11Dao();
@@ -33,11 +33,17 @@ public class CodeToStringJSONScanner11 {
 
         for (Scanner11 scanner11 : scanner11List)
         {
-            jsonObjectAll.put("Code: " + scanner11.getCopCode(), "Code Meaning: " + scanner11.getCodeString());
+            jsonObjectAll.put("Code", scanner11.getCopCode());
+            jsonObjectAll.put("Code Meaning", scanner11.getCodeString());
+            result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
+                    + jsonObjectAll.getString("Code Meaning") + "\",";
         }
 
-        int spacesToIndentEachLevel = 4;
-        result += jsonObjectAll.toString(spacesToIndentEachLevel) + "]}";
+        if (result.endsWith(",")) {
+            result = result.substring(0, result.length() - 1);
+        }
+
+        result += "\n\t}]\n}";
 
         return Response.status(200).entity(result).build();
     }

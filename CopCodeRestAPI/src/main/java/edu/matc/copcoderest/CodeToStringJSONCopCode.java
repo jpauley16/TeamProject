@@ -38,16 +38,8 @@ public class CodeToStringJSONCopCode {
 
         for (CopCode copCode : copCodesList)
         {
-            copCodesMap.put(copCode.getCopCode(), copCode.getCodeString());
-            //jsonObjectAll.put("Code", copCode.getCopCode());
-            //jsonObjectAll.put("Code Meaning", copCode.getCodeString());
-        }
-
-        for (Map.Entry<String, String> entry : copCodesMap.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue();
-            jsonObjectAll.put("Code", key);
-            jsonObjectAll.put("Code Meaning", value);
+            jsonObjectAll.put("Code", copCode.getCopCode());
+            jsonObjectAll.put("Code Meaning", copCode.getCodeString());
             result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
                     + jsonObjectAll.getString("Code Meaning") + "\",";
         }
