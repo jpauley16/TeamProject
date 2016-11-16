@@ -61,12 +61,12 @@ Responses are returned either JSON or XML, based on endpoint.
   	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`....`
 	
 ## Single code (XML)
-##### @GET /json/scanner10code/10-10
+##### @GET /xml/scanner10code/10-10
 `<ctosservice><code>10-10</code><codeMeaning>Off Duty</codeMeaning></ctosservice>`
 
 
-## Collection of codes (JSON)
-##### @GET /json/scanner10code/
+## Collection of codes (xml)
+##### @GET /xml/scanner10code/
 `<ctosservice><code>10-62A</code><codeMeaning>Take a report from a citizen</codeMeaning><code>10-72</code><codeMeaning>Gun involved</codeMeaning>...`
 
 
