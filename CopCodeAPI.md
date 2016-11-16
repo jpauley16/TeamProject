@@ -12,7 +12,7 @@ To make a request use the base url with one of the endpoint paths appended.
 | /json/medfirecode/{param} | Returns Medical/Fire code specified by param (i.e. Code10) |
 | /json/policescannercode/ | Returns all Police Scanner codes|
 | /json/policescannercode/{param} | Returns Police Scanner code specified by param (i.e. 187) |
-| /json/scaner10code/ | Returns all Cop codes |
+| /json/scanner10code/ | Returns all Cop codes |
 | /json/scanner10code/{param} | Returns Cop code specified by param (i.e. 10-10) |
 | /json/scanner11code/ | Returns all scanner11 codes|
 | /json/scanner11code/{param} | Returns scanner11 code specified by param (i.e. 11-10) |
