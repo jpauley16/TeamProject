@@ -9,7 +9,7 @@ Our problem is trying to figure out what these codes mean. There are many ways t
 * 
 
 ## Project Plan
-
+[Project Plan](ProjectPlan.md)
 [Time Log](TimeLog.md)
 
 ## API Documentation
