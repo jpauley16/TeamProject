@@ -1,4 +1,4 @@
-package edu.matc.copcoderest;
+package edu.matc.copcoderest.webservice;
 
 import edu.matc.copcoderest.entity.*;
 import edu.matc.copcoderest.persistence.*;
@@ -14,7 +14,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 /**
- * Created by netherskub on 11/14/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
 @Path("/ctosservice/json/scanner137code")
 public class CodeToStringJSONScanner137 {

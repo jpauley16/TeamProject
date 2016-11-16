@@ -12,3 +12,4 @@
 | Jeff Pauley | 11/14/2016 | Added 5 more java classes for JSON Responses | 1hr | Previously, To view all codes, "/ctosservice/xml/". To view a specific code, "/ctosservice/xml/{param}". Current, view all stays the same. To view a specific, "/ctosservice/xml/copcode/{param}" or "/ctosservice/xml/medfirecode/{param}", etc... will show codes specific to that class. |
 | Jeff Pauley | 11/14/2016 | Reformatting JSON responses | 1.5hr | (During php) Having trouble formatting to pretty print JSON |
 | Jeff Pauley | 11/15/2016 | Reformatting JSON responses | 4hr | Computer issues made coding longer. JSON responses completed for single line responses. Complete list leaves a trailed comma at the end of JSON list. |
+| Jeff Pauley | 11/16/2016 | Finalizing JSON resonpse formats | 1hr | All endpoints with JSON are formatted to pretty print JSON |

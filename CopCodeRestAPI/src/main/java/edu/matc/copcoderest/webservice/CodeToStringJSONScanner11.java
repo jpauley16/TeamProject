@@ -1,4 +1,4 @@
-package edu.matc.copcoderest;
+package edu.matc.copcoderest.webservice;
 
 import edu.matc.copcoderest.entity.*;
 import edu.matc.copcoderest.persistence.*;
@@ -12,34 +12,29 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 /**
- * Created by netherskub on 11/9/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
-@Path("/ctosservice/json/copcode")
-public class CodeToStringJSONCopCode {
-
+@Path("/ctosservice/json/scanner11code")
+public class CodeToStringJSONScanner11 {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response convertCopCodeJsonToStringFromInput()throws JSONException
     {
         String result = "{\"Results\":[{";
-        Map<String, String> copCodesMap = new HashMap<String, String>();
         JSONObject jsonObjectAll = new JSONObject();
 
-        CopCodeDao copCodeDao = new CopCodeDao();
+        Scanner11Dao scanner11Dao = new Scanner11Dao();
 
-        List<CopCode> copCodesList = copCodeDao.getAll();
+        List<Scanner11> scanner11List = scanner11Dao.getAll();
 
 
-        for (CopCode copCode : copCodesList)
+        for (Scanner11 scanner11 : scanner11List)
         {
-            jsonObjectAll.put("Code", copCode.getCopCode());
-            jsonObjectAll.put("Code Meaning", copCode.getCodeString());
+            jsonObjectAll.put("Code", scanner11.getCopCode());
+            jsonObjectAll.put("Code Meaning", scanner11.getCodeString());
             result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
                     + jsonObjectAll.getString("Code Meaning") + "\",";
         }
@@ -61,19 +56,18 @@ public class CodeToStringJSONCopCode {
         String policeCode = code;
         String result = "{\"Results\":[";
 
-        JSONObject jsonObjectCopCode = new JSONObject();
+        JSONObject jsonObjectScanner11 = new JSONObject();
 
-        CopCodeDao copCodeDao = new CopCodeDao();
+        Scanner11Dao scanner11Dao = new Scanner11Dao();
 
-        List<CopCode> copCodesList = copCodeDao.getAll();
+        List<Scanner11> scanner11List = scanner11Dao.getAll();
 
-
-        for (CopCode copCode : copCodesList) {
-            jsonObjectCopCode.put(copCode.getCopCode(), copCode.getCodeString());
+        for (Scanner11 scanner11 : scanner11List) {
+            jsonObjectScanner11.put(scanner11.getCopCode(), scanner11.getCodeString());
         }
 
-        if (jsonObjectCopCode.has(policeCode)) {
-            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectCopCode.get(policeCode) + "\"";
+        if (jsonObjectScanner11.has(policeCode)) {
+            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectScanner11.get(policeCode) + "\"";
         }
 
         result += "\n\t}]\n}";

@@ -1,4 +1,4 @@
-package edu.matc.copcoderest;
+package edu.matc.copcoderest.webservice;
 
 import edu.matc.copcoderest.entity.*;
 import edu.matc.copcoderest.persistence.*;
@@ -14,10 +14,10 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 /**
- * Created by netherskub on 11/14/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
-@Path("/ctosservice/json/scanner11code")
-public class CodeToStringJSONScanner11 {
+@Path("/ctosservice/json/policescannercode")
+public class CodeToStringJSONPoliceScannerCode {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -26,15 +26,15 @@ public class CodeToStringJSONScanner11 {
         String result = "{\"Results\":[{";
         JSONObject jsonObjectAll = new JSONObject();
 
-        Scanner11Dao scanner11Dao = new Scanner11Dao();
+        PoliceScannerCodeDao policeScannerCodeDao = new PoliceScannerCodeDao();
 
-        List<Scanner11> scanner11List = scanner11Dao.getAll();
+        List<PoliceScannerCode> policeScannerCodeList = policeScannerCodeDao.getAll();
 
 
-        for (Scanner11 scanner11 : scanner11List)
+        for (PoliceScannerCode policeScannerCode : policeScannerCodeList)
         {
-            jsonObjectAll.put("Code", scanner11.getCopCode());
-            jsonObjectAll.put("Code Meaning", scanner11.getCodeString());
+            jsonObjectAll.put("Code", policeScannerCode.getScannerCode());
+            jsonObjectAll.put("Code Meaning", policeScannerCode.getScannerString());
             result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
                     + jsonObjectAll.getString("Code Meaning") + "\",";
         }
@@ -44,6 +44,7 @@ public class CodeToStringJSONScanner11 {
         }
 
         result += "\n\t}]\n}";
+
 
         return Response.status(200).entity(result).build();
     }
@@ -56,18 +57,18 @@ public class CodeToStringJSONScanner11 {
         String policeCode = code;
         String result = "{\"Results\":[";
 
-        JSONObject jsonObjectScanner11 = new JSONObject();
+        JSONObject jsonObjectPoliceScanner = new JSONObject();
 
-        Scanner11Dao scanner11Dao = new Scanner11Dao();
+        PoliceScannerCodeDao policeScannerCodeDao = new PoliceScannerCodeDao();
 
-        List<Scanner11> scanner11List = scanner11Dao.getAll();
+        List<PoliceScannerCode> policeScannerCodeList = policeScannerCodeDao.getAll();
 
-        for (Scanner11 scanner11 : scanner11List) {
-            jsonObjectScanner11.put(scanner11.getCopCode(), scanner11.getCodeString());
+        for (PoliceScannerCode policeScannerCode : policeScannerCodeList) {
+            jsonObjectPoliceScanner.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
         }
 
-        if (jsonObjectScanner11.has(policeCode)) {
-            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectScanner11.get(policeCode) + "\"";
+        if (jsonObjectPoliceScanner.has(policeCode)) {
+            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectPoliceScanner.get(policeCode) + "\"";
         }
 
         result += "\n\t}]\n}";

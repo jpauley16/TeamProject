@@ -9,7 +9,7 @@ import org.hibernate.annotations.GenericGenerator;
 import java.util.*;
 import javax.persistence.*;
 /**
- * Created by craigwilson on 11/8/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
 @Entity
 @Table(name = "scanner11")

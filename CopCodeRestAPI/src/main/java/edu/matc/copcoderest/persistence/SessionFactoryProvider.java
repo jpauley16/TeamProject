@@ -6,7 +6,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
 /**
- * Created by craigwilson on 11/8/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
 public class SessionFactoryProvider {
 

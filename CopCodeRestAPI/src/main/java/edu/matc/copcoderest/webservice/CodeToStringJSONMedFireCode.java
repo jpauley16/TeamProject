@@ -1,4 +1,4 @@
-package edu.matc.copcoderest;
+package edu.matc.copcoderest.webservice;
 
 import edu.matc.copcoderest.entity.*;
 import edu.matc.copcoderest.persistence.*;
@@ -13,11 +13,12 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.List;
+
 /**
- * Created by netherskub on 11/14/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
-@Path("/ctosservice/json/policescannercode")
-public class CodeToStringJSONPoliceScannerCode {
+@Path("/ctosservice/json/medfirecode")
+public class CodeToStringJSONMedFireCode {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -26,15 +27,15 @@ public class CodeToStringJSONPoliceScannerCode {
         String result = "{\"Results\":[{";
         JSONObject jsonObjectAll = new JSONObject();
 
-        PoliceScannerCodeDao policeScannerCodeDao = new PoliceScannerCodeDao();
+        MedFireCodesDao medFireCodesDao = new MedFireCodesDao();
 
-        List<PoliceScannerCode> policeScannerCodeList = policeScannerCodeDao.getAll();
+        List<MedFireCodes> medFireCodesList = medFireCodesDao.getAll();
 
 
-        for (PoliceScannerCode policeScannerCode : policeScannerCodeList)
+        for (MedFireCodes medFireCodes : medFireCodesList)
         {
-            jsonObjectAll.put("Code", policeScannerCode.getScannerCode());
-            jsonObjectAll.put("Code Meaning", policeScannerCode.getScannerString());
+            jsonObjectAll.put("Code", medFireCodes.getCopCode());
+            jsonObjectAll.put("Code Meaning", medFireCodes.getCodeString());
             result += "\n\t\"Code\": \"" + jsonObjectAll.getString("Code") + "\", \n\t\"Code Meaning\": \""
                     + jsonObjectAll.getString("Code Meaning") + "\",";
         }
@@ -44,7 +45,6 @@ public class CodeToStringJSONPoliceScannerCode {
         }
 
         result += "\n\t}]\n}";
-
 
         return Response.status(200).entity(result).build();
     }
@@ -57,18 +57,18 @@ public class CodeToStringJSONPoliceScannerCode {
         String policeCode = code;
         String result = "{\"Results\":[";
 
-        JSONObject jsonObjectPoliceScanner = new JSONObject();
+        JSONObject jsonObjectMedFire = new JSONObject();
 
-        PoliceScannerCodeDao policeScannerCodeDao = new PoliceScannerCodeDao();
+        MedFireCodesDao medFireCodesDao = new MedFireCodesDao();
 
-        List<PoliceScannerCode> policeScannerCodeList = policeScannerCodeDao.getAll();
+        List<MedFireCodes> medFireCodesList = medFireCodesDao.getAll();
 
-        for (PoliceScannerCode policeScannerCode : policeScannerCodeList) {
-            jsonObjectPoliceScanner.put(policeScannerCode.getScannerCode(), policeScannerCode.getScannerString());
+        for (MedFireCodes medFireCodes : medFireCodesList) {
+            jsonObjectMedFire.put(medFireCodes.getCopCode(), medFireCodes.getCodeString());
         }
 
-        if (jsonObjectPoliceScanner.has(policeCode)) {
-            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectPoliceScanner.get(policeCode) + "\"";
+        if (jsonObjectMedFire.has(policeCode)) {
+            result += "{\n\t\"Code\": \"" + policeCode + "\", \n\t\"Code Meaning\": \"" + jsonObjectMedFire.get(policeCode) + "\"";
         }
 
         result += "\n\t}]\n}";

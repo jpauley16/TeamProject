@@ -1,4 +1,4 @@
-package edu.matc.copcoderest;
+package edu.matc.copcoderest.webservice;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,10 +17,12 @@ import edu.matc.copcoderest.entity.Scanner137;
 import java.util.*;
 
 /**
- * Created by craigwilson on 11/7/16.
+ * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
 @Path("/ctosservice/xml")
 public class CodeToStringXML {
+
+    /**
     @Path("{param}")
     @GET
     @Produces(MediaType.TEXT_XML)
@@ -79,7 +81,7 @@ public class CodeToStringXML {
 
         return Response.status(200).entity(results).build();
     }
-
+    */
     @GET
     @Produces(MediaType.TEXT_XML)
     public Response convertCodeToStringAll() {
