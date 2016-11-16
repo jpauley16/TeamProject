@@ -9,5 +9,8 @@
 - [X] Create DAO for generic DAO
 - [X] Add unit tests for DAO
 - [X] Add entities for tables in database
+- [X] Create classes for json responses per entity
+- [X] Create classes for xml responses per entity
+- [X] Format responses to their proper type
 - [X] Create database on server
 - [X] Deploy service to server
