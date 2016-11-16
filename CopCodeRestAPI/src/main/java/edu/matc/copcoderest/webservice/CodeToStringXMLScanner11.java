@@ -14,7 +14,7 @@ import java.util.*;
 /**
  * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
-@Path("/ctosservice/xml/scanner11")
+@Path("/ctosservice/xml/scanner11code")
 public class CodeToStringXMLScanner11 extends CodeToStringXML{
 
     /**
