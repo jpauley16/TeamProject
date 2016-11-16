@@ -1,49 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c19bbf3-0264-494c-ab1d-d77f88bc7ae2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/CodeToStringJSONCopCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/CodeToStringJSONMedFireCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/CodeToStringJSONPoliceScannerCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/CodeToStringJSONScanner11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/CodeToStringJSONScanner137.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONCopCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/CodeToStringJSONCopCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/CodeToStringJSONMedFireCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/CodeToStringJSONPoliceScannerCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/CodeToStringJSONScanner11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/CodeToStringJSONScanner137.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONCopCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONCopCode.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONMedFireCode.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONMedFireCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONPoliceScannerCode.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONPoliceScannerCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner11.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner137.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner137.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi.war" afterPath="$PROJECT_DIR$/target/copcodeapi.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONMedFireCode.class" afterPath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONMedFireCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONPoliceScannerCode.class" afterPath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONPoliceScannerCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner11.class" afterPath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner137.class" afterPath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringJSONScanner137.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.class" afterPath="$PROJECT_DIR$/target/copcodeapi/WEB-INF/classes/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/MyAppLog.log" afterPath="$PROJECT_DIR$/logs/MyAppLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/copcodeapi/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/copcodeapi/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-    </list>
+    <list default="true" id="0c19bbf3-0264-494c-ab1d-d77f88bc7ae2" name="Default" comment="" />
     <ignored path="CopCodeRestAPI.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -90,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeToStringXML.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CodeToStringXML.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXML.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
+            <state relative-caret-position="15">
               <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -107,7 +65,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,8 +79,6 @@
               <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#771#787#0" expanded="true" />
-                <element signature="e#1709#1725#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,7 +91,6 @@
               <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#741#757#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,10 +99,10 @@
       <file leaf-file-name="CodeToStringJSONScanner10.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="315">
               <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#812#828#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -158,22 +115,18 @@
               <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#743#759#0" expanded="true" />
-                <element signature="e#1626#1642#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeToStringXMLScanner137.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CodeToStringXMLScanner137.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#747#763#0" expanded="true" />
-                <element signature="e#1636#1652#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,8 +135,8 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1875">
-              <caret line="893" column="16" selection-start-line="893" selection-start-column="16" selection-end-line="893" selection-end-column="16" />
+            <state relative-caret-position="12375">
+              <caret line="825" column="16" selection-start-line="825" selection-start-column="16" selection-end-line="825" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -196,8 +149,6 @@
               <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#749#765#0" expanded="true" />
-                <element signature="e#1650#1666#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -251,10 +202,10 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLMedFireCode.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner10.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner10.java" />
       </list>
     </option>
   </component>
@@ -284,8 +235,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="60" />
-    <option name="y" value="81" />
+    <option name="y" value="25" />
     <option name="width" value="1280" />
     <option name="height" value="726" />
   </component>
@@ -313,7 +263,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>1
+    <panes>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -343,24 +293,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="target" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CopCodeRestAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CopCodeRestAPI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -514,8 +446,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -993,19 +925,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
-      <setting name="environment" value="" />
-      <setting name="specsToExecute" value="" />
-      <setting name="tags" value="" />
-      <setting name="parallelNodes" value="" />
-      <setting name="execInParallel" value="false" />
-      <setting name="programParameters" value="" />
-      <setting name="workingDirectory" value="" />
-      <setting name="moduleName" value="" />
-      <envMap />
-      <setting name="rowsRange" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1149,6 +1068,7 @@
       <workItem from="1479234012878" duration="1212000" />
       <workItem from="1479277039852" duration="3950000" />
       <workItem from="1479317055948" duration="346000" />
+      <workItem from="1479333515943" duration="229000" />
     </task>
     <task id="LOCAL-00001" summary="adding to xml">
       <created>1479081423806</created>
@@ -1157,7 +1077,14 @@
       <option name="project" value="LOCAL" />
       <updated>1479081423806</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Final Updates">
+      <created>1479333736214</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1479333736214</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1193,10 +1120,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61928000" />
+    <option name="totallyTimeSpent" value="62157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="81" width="1280" height="726" extended-state="0" />
+    <frame x="0" y="25" width="1280" height="726" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1213,15 +1140,15 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39878234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32176656" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32115677" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32176656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32115677" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34652665" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34609374" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1267,7 +1194,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding entities" />
     <MESSAGE value="adding to xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding to xml" />
+    <MESSAGE value="Final Updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1280,13 +1208,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/Database/copCodes.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/copcoderest/persistence.java" />
     <entry file="dbDummy://dbtable:/79fd4e0/57b3919e-e87a-4a3a-a1a7-cf74addbd29a/copCodes.copCodes" />
     <entry file="file://$PROJECT_DIR$/logs/MyAppLog.log">
@@ -1505,7 +1426,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1521,55 +1444,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="893" column="16" selection-start-line="893" selection-start-column="16" selection-end-line="893" selection-end-column="16" />
+        <state relative-caret-position="12375">
+          <caret line="825" column="16" selection-start-line="825" selection-start-column="16" selection-end-line="825" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner137.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="60">
+          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#747#763#0" expanded="true" />
-            <element signature="e#1636#1652#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="315">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#743#759#0" expanded="true" />
-            <element signature="e#1626#1642#0" expanded="true" />
+            <element signature="e#812#828#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="15">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#741#757#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#771#787#0" expanded="true" />
-            <element signature="e#1709#1725#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1580,34 +1486,44 @@
           <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#749#765#0" expanded="true" />
-            <element signature="e#1650#1666#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner137.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLPoliceScannerCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="55" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringJSONScanner10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        <state relative-caret-position="155">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXML.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state relative-caret-position="150">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner11.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/copcoderest/webservice/CodeToStringXMLScanner137.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
