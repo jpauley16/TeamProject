@@ -22,7 +22,7 @@ import java.util.*;
 @Path("/ctosservice/xml")
 public class CodeToStringXML {
 
-    /**
+
     @Path("{param}")
     @GET
     @Produces(MediaType.TEXT_XML)
@@ -68,20 +68,18 @@ public class CodeToStringXML {
         }
 
 
-        for (Map.Entry<String, String> entry : copCodesMap.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue();
-
-            if (key.equals(policeCode)) {
-                results += "<ctosservice><code>" + key + "</code><codeMeaning>" + value + "</codeMeaning></ctosservice>";
-
-            }
-        }
+        results = displayFoundCodes(copCodesMap, policeCode, results);
 
 
         return Response.status(200).entity(results).build();
     }
-    */
+
+
+    /**
+     * Converts all cop codes to their meaning.
+     *
+     * @return  All cop codes with their meanings in XML.
+     */
     @GET
     @Produces(MediaType.TEXT_XML)
     public Response convertCodeToStringAll() {
@@ -135,6 +133,31 @@ public class CodeToStringXML {
 
 
         return Response.status(200).entity(results).build();
+    }
+
+    /**
+     * Returns a string of codes found in XML.
+     *
+     * @param copCodesMap   Map of all cop codes.
+     * @param policeCode    The specified police code.
+     * @param results       The found results in XML.
+     * @return
+     */
+    public String displayFoundCodes(Map<String, String> copCodesMap, String policeCode, String results) {
+
+        for (Map.Entry<String, String> entry : copCodesMap.entrySet()) {
+            String key = entry.getKey();
+            String value = entry.getValue();
+
+            if (key.equals(policeCode)) {
+                results += "<ctosservice><code>" + key + "</code><codeMeaning>" + value + "</codeMeaning></ctosservice>";
+
+            }
+        }
+
+        return results;
+
+
     }
 
 

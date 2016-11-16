@@ -17,8 +17,14 @@ import java.util.*;
  */
 
 @Path("/ctosservice/xml/scanner10")
-public class CodeToStringXMLScanner10 {
+public class CodeToStringXMLScanner10 extends CodeToStringXML{
 
+    /**
+     * Converts a specific cop code to its meaning
+     *
+     * @param code  The specified cop code.
+     * @return      The results in xml
+     */
     @Path("{param}")
     @GET
     @Produces(MediaType.TEXT_XML)
@@ -37,20 +43,16 @@ public class CodeToStringXMLScanner10 {
             copCodesMap.put(copCode.getCopCode(), copCode.getCodeString());
         }
 
-        for (Map.Entry<String, String> entry : copCodesMap.entrySet()) {
-            String key = entry.getKey();
-            String value = entry.getValue();
-
-            if (key.equals(policeCode)) {
-                results += "<ctosservice><code>" + key + "</code><codeMeaning>" + value + "</codeMeaning></ctosservice>";
-
-            }
-        }
+        results = displayFoundCodes(copCodesMap, policeCode, results);
 
         return Response.status(200).entity(results).build();
     }
 
-
+    /**
+     * Converts all cop codes to their meaning.
+     *
+     * @return  All cop codes with their meanings in XML.
+     */
     @GET
     @Produces(MediaType.TEXT_XML)
     public Response convertCodeToStringAll() {
