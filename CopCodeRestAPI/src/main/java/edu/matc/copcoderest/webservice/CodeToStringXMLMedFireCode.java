@@ -14,7 +14,7 @@ import java.util.*;
 /**
  * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
-@Path("/ctosservice/xml/medFire")
+@Path("/ctosservice/xml/medfirecode")
 public class CodeToStringXMLMedFireCode {
 
     @Path("{param}")

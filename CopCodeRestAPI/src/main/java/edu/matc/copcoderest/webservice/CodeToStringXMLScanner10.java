@@ -16,7 +16,7 @@ import java.util.*;
  * Created by Craig Wilson and Jeff Pauley on 11/10/16.
  */
 
-@Path("/ctosservice/xml/scanner10")
+@Path("/ctosservice/xml/scanner10code")
 public class CodeToStringXMLScanner10 {
 
     @Path("{param}")
