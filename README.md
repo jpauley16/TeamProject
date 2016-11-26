@@ -6,7 +6,7 @@ Our problem is trying to figure out what these codes mean. There are many ways t
 ## Project Objectives
 * Translate codes to XML outputs based on input parameter
 * Translate codes to JSON outputs based on input parameter
-* 
+
 
 ## Project Plan
 [Project Plan](ProjectPlan.md)  
